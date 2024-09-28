@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css" media="screen">
+        .ticket {
+            border: 2px dobule red;
+            background-color: yellow;
+            color:red;
+            padding: 20px;
+            box-shadow: 10px 10px 2px black;
+        }
+        h2 {
+            text-align: center;
+        }
+        dl {
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+        }
+    </style>
+    <style type="text/css" media="print">
+        .ticket {
+            background-color: white;
+            box-shadow: none;
+        }
+        aside {
+            display: none;
+        }
+        dl {
+            display: grid;
+            grid-template-columns: 12fr;
+        }
+        button {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+   <div class="ticket">
+       <h2>Ticket</h2>
+       <aside>
+         <img src="/public/images/bagcollection.jpeg" width="100" height="100">
+       </aside>
+       <dl>
+        <dt>Departure</dt>
+        <dd>Hyd  14:30 </dd>
+        <dt>Arrival</dt>
+        <dd>Delhi 15:45 </dd>
+       </dl>
+       <button onclick="window.print()">Print Ticket</button>
+   </div>
+</body>
+</html>

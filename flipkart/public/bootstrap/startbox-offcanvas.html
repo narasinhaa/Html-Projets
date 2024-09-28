@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>startbox</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <script  src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<style>
+    body{
+        height: 100vh;
+        background-color: #f9e6ff;
+    }
+    .btn-buynow{
+        width: 100px;
+        height: 40px;
+        margin-right: 40px;
+        border-radius: 40%;
+        color: white;
+        background-color: #f51748;
+        border: none;
+    }
+    .page-data{
+        text-align: center;
+        margin-top: 110px;
+    }
+    .title{
+        font-size: 40px;
+        font-weight: bold;
+        font-family: arial;
+    }
+    p{
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    
+</style>
+</head>
+<body class="container-fluid">
+    <header class="border bg-secondary text-white d-flex justify-content-between border-2  p-3 m-3 ">
+        <div class="btn-toolbar " >
+            <span  class="h4  me-2">Startbox.</span>
+            <span ><button data-bs-target="#menu" data-bs-toggle="offcanvas" class="bi btn btn-light bi-justify fs-5"></button></span>
+        </div>
+        <div class="offcanvas offcanvas-start"id="menu">
+            <div class="offcanvas-header bg-secondary text-white">
+                <h4>Startbox</h4>
+                <button class="btn btn-close btn-close-white" data-bs-dismiss="offcanvas" ></button>            
+            </div>
+            <ul class="h6 m-3"> 
+                <li  class="my-3">Home</li>
+                <li  class="my-3">Services</li>
+                <li>Pages</li>
+                <li  class="my-3">Portfolio</li>
+                <li> Blog</li>
+                <li  class="my-3">Contact</li>
+            </ul>
+           
+        </div>
+        <nav class=" fs-6">
+            <span>Home</span>
+            <span class="mx-3">Services</span>
+            <span>Pages</span>
+            <span class="mx-3">Portfolio</span>
+            <span> Blog</span>
+            <span class="m-lg-3">Contact</span>
+        </nav>
+        <div>
+          <button  class="btn-buynow">Buy Now</button>
+        </div>
+     
+    </header>
+    <section>
+        <div class="page-data">
+            <span class="title">Open the Startbox Now. <br> Build your future.</span>
+            <p>Corporate template for business, portfolio, agencies, freelancers & blog.<br> Creative design, modern and thoughtful functionality.</p>
+        </div>
+    </section>
+ 
+</body>
+</html>

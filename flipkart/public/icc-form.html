@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>icc-form</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+            background: url(../public/images/wp9419053.webp);
+            background-size: 100% 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form{
+            width: 450px;
+            height: 550px;
+            background-color: white;
+            padding: 30px;
+            font-family: arial;
+        }
+        .logo{
+            margin-left: 50px;
+        }
+        .form-group{
+            margin-top: 10px;
+        
+        }
+        .btn-login{
+            background-color: rgb(64, 64, 234);
+            width: 150px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+     
+        .input-data{
+            width: 90%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+        .buttan-1{
+            width: 90%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+        .lmg-logo{
+            margin-right: 30px;
+        margin-left: -280px;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <div class="logo">
+            <img src="./images/bannerlogo" alt="icc-logo">
+        </div>
+        <div>
+           <h2> Log in or Create Your Account</h2>
+        </div>
+        <div class="form-group">
+            <input type="email" name="Email Address" class="input-data" placeholder="Email Address">
+        </div>
+        <div class="form-group">
+            <input type="password" name="Password" class="input-data" placeholder="Password">
+        </div>
+        <div class="form-group">
+                <a href="#"> forgot your password ?</a>
+               <input type="checkbox" name="login"><label for="login"> Keep me logged in</label>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn-login">Log in</button>
+        </div>
+        <div class="form-group">
+            <p>Don't have an account? Sign up today for exclusive content, early access to tickets and other membership rewards</p>
+            <a href="#">sign in</a>
+        </div>
+        <div>
+            <h2> Sign in with your social account</h2>
+         </div>
+         <div class="form-group">
+            
+            <button class="buttan-1" type="button"><span><img class="lmg-logo" width="20px" height="15px"src="/public/images/fblogo.jpeg" alt="fblogo"></span>Facebook</button>
+            
+        </div>
+        <div class="form-group">
+            <button class="buttan-1" type="button">
+                <span><img class="lmg-logo" src="../public/images/goglelogo.jpeg" width="20px" height="15px" alt="googlelogo"></span>Google</button>
+        </div>
+        <div class="form-group">
+            <button class="buttan-1" type="button">
+                <span><img class="lmg-logo" src="../public/images/applelogo.jpeg" width="20px" height="15px" alt="applelogo"></span>Apple</button>
+        </div>
+        
+    </form>
+</body>
+</html>

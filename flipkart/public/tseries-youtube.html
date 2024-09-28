@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tseries</title>
+    
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            font-family: arial;
+        }
+        .bi-justify{
+            font-size: 30px;
+        }
+        .search-bar{
+            width: 400px;
+            display: inline-flex;
+            justify-content: space-between;
+            border: 2px solid grey;
+            border-radius: 20px;
+            font-size: 16px;
+            padding: 7px;
+        }
+        .bi-mic-fill{
+            background-color: rgb(227, 226, 226);
+            border-radius: 50%;
+            margin-left: 20px;
+            padding: 5px;
+        }
+         .bi-three-dots-vertical{
+            font-size: 20px;
+            margin-right: 20px;
+        }
+        .bi-person-circle{
+            border: 2px solid blue;
+            padding: 5px;
+            border-radius: 15px;
+            color: blue;
+        }
+        .nav-item{
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            
+        }
+        section{
+            display: grid;
+            grid-template-columns: 1fr 11fr;
+        }
+        .nav-title{
+            font-size: 14px;
+        }
+         .banner{
+            border-radius: 25px;
+         }
+         article{
+            display: grid;
+            grid-template-columns: 2fr 10fr;
+            margin-top: 20px;
+            font-family: Arial;
+         }
+         .article-title{
+            font-size: 30px;
+            font-weight: bold;
+            font-family: arial;
+         }
+         .article-subtitle{
+            color: gray;
+            margin-top: 15px;
+         }
+         .article-summary{
+            margin-top: 15px;
+            color: gray;
+            width: 600px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            margin-bottom: 15px;
+         }
+         .bi-bell-fill{
+            margin-top: 15px;
+            display: block;
+            background-color: black;
+            color: white;
+            border-radius: 30px;
+            width: 100px;
+            padding: 10px;
+         }
+         .nav-tabs {
+            font-size: 20px;
+            margin-top: 40px;
+            padding-bottom: 10px;
+            color: gray;
+            border-bottom:  2px solid rgb(220, 209, 209);
+            
+         }
+         .nav-tabs span{
+             margin-right: 30px;
+         }
+         .channel-highlights{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            width: 85%;
+           
+         }
+         .channel-highlights iframe{
+            width: 100%;
+            height: 250px;
+         }
+         .hightlight-summary{
+            margin-left: 40px;
+         }
+         .views{
+            color: gray;
+            font-size: 12px;
+            margin-bottom: 15px;
+         }
+         .artist{
+            font-size: 20px;
+            font-weight: bold;
+         }
+         .videos{
+           margin-top: 20px;
+            border-top: 2px solid rgb(220, 209, 209);
+            padding-top: 10px;
+            
+         }
+         .bi-play-fill{
+            margin-left: 20px;
+            font-size: 15px;
+            padding: 10px;
+         }
+         .videos-row{
+            display: grid;
+            grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+            margin-top: 20px;
+         }
+         .videos-row iframe{
+            width: 210px;
+         }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <span class="bi  bi-justify"></span>
+            <img src="/public/images/youtube_logo.PNG" width="120">
+        </div>
+        <div>
+            <div class="search-bar">
+                <span>search</span>
+                <span class="bi bi-search"></span>
+        </div>
+            <span class="bi bi-mic-fill"></span>
+        </div>
+        <div>
+            <span class="bi bi-three-dots-vertical "></span>
+            <span class="bi bi-person-circle">signin</span>
+        </div>
+    </header>
+    <section>
+        <nav>
+            <div class="nav-item">
+                <span class="bi bi-house-door"></span>
+                <div>home</div>
+            </div>
+            <div class="nav-item">
+                <span class="bi bi-film"></span>
+                <div>film</div>
+            </div>
+            <div class="nav-item">
+                <span class="bi bi-camera-video"></span>
+                <div>videos</div>
+            </div>
+            <div class="nav-item">
+                <span class="bi bi-clock-history"></span>
+                <div>History</div>
+            </div>
+        
+        </nav>
+        <main>
+            <div>
+                <img class="banner" src="/public/images/tseries_banner.jpg" width="100%">
+            </div>
+            <article>
+                <div>
+                    <img src="./images/tseies_ion.jpg" width="100%">
+                </div>
+                <div>
+                   <div class="article-title">T-Series</div>
+                   <div class="article-subtitle">@tseries•273M subscribers•21K videos</div>
+                   <div  class="article-summary">"Music can change the world". T-Series is India's largest Music Label & Movie Studio, believes in bringing world close together through its music. ...</div>
+                   <div>
+                    <a href="youtu.be/q3EsYvIapPQ">youtu.be/q3EsYvIapPQ </a>and 4 more links
+                   </div>
+                   <div>
+                    <span class="bi bi-bell-fill"> Subscribe </span>
+                </div>
+                </div>
+            </article>
+            <div class="nav-tabs">
+                <span>Home</span>
+                <span>Videos</span>
+                <span>Shorts</span>
+                <span>Live</span>
+                <span>Playlists</span>
+                <span>Community</span>
+                <span class="bi bi-search"></span>
+            </div>
+            <div class="channel-highlights">
+                  <iframe src="https://www.youtube.com/embed/CMNIKN17QHM?si=fIIUSc9O2hyjkOra" title="BONITA (VIDEO SONG): @YoYoHoneySingh "></iframe>
+                  <div class="hightlight-summary">
+                       <h4>BONITA (VIDEO SONG): @YoYoHoneySingh |</h4>
+                       <div class="views">11,322,680 views 2 days ago</div>
+                       <div>PRESENTING THE FULL VIDEO SONG 'BONITA' BY YO YO HONEY SINGH, FROM THE MOST LOVED ALBUM OF THIS YEAR 'GLORY'. </div>
+                   </div>
+            </div>
+            <div class="videos">
+                <div class="video-bar">
+                    <span class="artist">Yo Yo Honey Singh</span>
+                    <span class="bi bi-play-fill">play all</span>
+                </div>
+                <div class="videos-row">
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/q3EsYvIapPQ?si=gQcIIOaEfySB2QgM"></iframe>
+                    <p>
+                  
+                        BONITA (VIDEO SONG): @YoYoHoneySingh |</p>
+                    </div>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/q3EsYvIapPQ?si=XO8wew38VM8"></iframe>
+                    <p>
+                
+                        MILLIONAIRE SONG (Full Video): @YoYoHoneySingh </p>
+                    </div>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/q3EsYvIapPQ?si=gQcIIOaEfySB2QgM"></iframe>
+                    <p>
+                   
+                        GLORY (VIDEO SONG): @YoYoHoneySingh |</p>
+                    </div>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/q3EsYvIapPQ?si=gQcIIOaEfySB2QgM"></iframe>
+                    <p>
+                   
+                        PAYAL (VIDEO SONG): @YoYoHoneySingh |</p>
+                    </div>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/q3EsYvIapPQ?si=gQcIIOaEfySB2QgM"></iframe>
+                    <p>
+                   
+                        CHOORY (VIDEO SONG): @YoYoHoneySingh |</p>
+                    </div>
+                    
+                </div>    
+
+            </div>
+           
+        </main>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+       .men-fashion {
+        background-image: url("/public/images/men-fashion.jpg");
+        background-size: cover;
+        width: 300px;
+        height: 100px;
+        z-index: 1;
+        top:50px;
+        left: 50px;
+       }
+       .women-fashion {
+        background-image: url("/public/images/women-fashion.jpg");
+        background-size: 100% 100%;
+        width: 300px;
+        height: 100px;
+     
+        z-index: 0;
+       }
+       .kids-fashion {
+        background-image: url("/public/images/kids-fashion.jpg");
+        background-size: 100% 100%;
+        width: 300px;
+        height: 100px;
+        top:100px;
+        left: 100px;
+        z-index:2;
+       }
+       div {
+         border:2px solid black;
+         border-radius: 20px;
+         position: absolute;
+         transition: 2s;
+       }
+       div:hover {
+         position: absolute;
+         top: 200px;
+         left: 500px;
+         transition: 5s;
+         width: 500px;
+         height: 300px;
+         border-radius: 50%;
+       }
+    </style>
+
+</head>
+<body>
+     <div class="men-fashion">
+
+     </div>
+     <div class="women-fashion">
+
+     </div>
+     <div class="kids-fashion">
+
+     </div>
+</body>
+</html>

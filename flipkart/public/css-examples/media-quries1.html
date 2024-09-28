@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+         button {
+            font-size: 22px;
+         }
+        .brand-title {
+            font-size: 22px;
+            font-weight: bold;
+            font-family: Arial;
+        }
+        nav span {
+            font-size: 22px;
+            margin: 0px 20px 0px 20px;
+        }
+
+        header {
+            background-color: black;
+            color:white;
+            padding: 20px;
+        }
+
+        @media screen and (orientation:landscape) {
+             header {
+                display: flex;
+                justify-content: space-between;
+             }
+             .navbar-toggler {
+                display: none;
+             }
+        }
+
+        @media screen and (orientation:portrait) {
+            nav {
+                display: none;
+            }
+            .navbar-toggler {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex;">
+            <button class="navbar-toggler bi bi-justify" style="margin-right: 20px;"></button>
+            <div class="brand-title">Shopper.</div>
+        </div>
+        <nav>
+            <span>Home</span>
+            <span>Shop</span>
+            <span>Docs</span>
+            <span>Pages</span>
+            <span>Blog</span>
+        </nav>
+    </header>
+</body>
+</html

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe example</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+        }
+        iframe{
+            border: none;
+            
+        }
+        ul{
+            list-style: none;
+            margin-left: -40px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        li{
+            background-color: black;
+            font-size: 20px;
+            margin-bottom: 20px;
+            padding: 10px;
+            font-family: arial;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <h2>templates</h2>
+            <li><a href="./amezonmyself.html" target="preview">amezoncard</a> </li>
+            <li> <a href="./netflix.html" target="preview">netflix</a> </li>
+            <li> <a href="./shopper.html" target="preview">shopper</a></li>
+            <h2> videos</h2>
+            <li> <a href="https://www.youtube.com/embed/mAkEwgfLoY8&quot "; target= "preview" > Oracle </a></li>
+            <li><a href="https://www.youtube.com/embed/t0Q2otsqC4I?si=DenUF31khCkWvXZR"; target="preview" >tom&jerry</a></li>
+            <li><a href="https://www.youtube.com/embed/HHw5-W4SCVw?si=CTmCPI1F4jhrtQ0L"; target="preview" >python</a></li>
+        </ul>
+        
+    </nav>
+    <section>
+        <iframe name="preview" width="100%" height="500px"></iframe>
+    </section>
+</body>
+</html>

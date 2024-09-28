@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nerflix</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style>
+        body{
+            background-color: black;
+            font-family:arial;
+            /* opacity: 0.5; */
+            
+        }
+        .shade{
+            background-image: url("../images/Netflix-banner.webp");
+            background-size: cover;
+            /* color: rgba(0, 0,0,0.5); */
+            /* background-color:rgba(0, 0,0,0.5) ; */
+            opacity:0.9 ;
+         
+            width: 100%;
+        }
+        .email-btn{
+            /* display: flex; */
+            /* justify-content: center; */
+            width: px;
+              
+        }
+        
+         .container-fluid{
+            margin-left: 00px;
+            
+         }
+        .card-footer{
+            display: flex;
+            justify-content: end;
+            align-items: end;
+        }
+         .carousel-item1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body >
+    <div class="shade"  >
+        <header>
+            <div class="netflex d-flex justify-content-around text-danger  p-4">
+                <div>
+                   <span class="brand-title fs-1 p4 mt-1 fw-bold">Netflix</span>
+                </div>
+                <div class="dropdown fs-5  p-4 ms-4">
+                   <button data-bs-target="#menu" data-bs-toggle="dropdown" class="border border-white  text-white  bg-dark">
+                    <ul class="dropdown-menu" id="menu">
+                        <li class="bg-primary p-1">English</li>
+                        <li>Hindi</li>
+                    </ul>
+                       <span class="bi bi-translate">English</span>
+                       <span class="bi bi-chevron-down"></span>
+                   </button>    
+                  <span class="p-1 bg-danger text-white ms-4 rounded">
+                        <span class="btn-signin ">
+                        <span>Sign in</span>
+                    </span>
+                </div>
+            </div>
+        <div class="title text-center text-white mt-5 fs-1 fw-bold ">Unlimited movies, <br>TV shows and more</div>
+        <div class="subtitle text-center text-white mt-5 fs-3 fw-bold">Watch anywhere. Cancel anytime.</div>
+            
+            <div class=" email-btn " >
+                <div class="d-flex justify-content-center">
+                    <p class="text-white fs-6 mt-5 mb-3">Ready to watch? Enter your email to create or restart your membership.</p>
+                </div>
+                  <span class="d-flex justify-content-center " >
+                    <input type="email " class="form-control rounded-3 bg-secondary  w-25 fs-4 mb-" placeholder="Your email address">
+                    <button class=" btn bg-danger  ms-4 text-white rounded-2 fs-4 " >Get Started <span class="bi bi-chevron-right"></span></button>
+                  </span>
+            </div>
+</div>
+</header>
+        
+<section>
+    <div class="trainding ms-5 text-white mt-5 "> 
+        <h2>Treanding Now</h2>
+        <div class="dropdown ms-5" data-bs-theme="dark">
+            <button data-bs-target="#india" data-bs-toggle="dropdown" class="btn btn-dark dropdown-toggle me-3 ">India</button>
+           
+            <ul class="dropdown-menu " id="movies">
+                <li class="dropdown-item"> <a > <span class=" dropdown-item-text bg-primary"> India </span> </a> </li>
+                <li class="dropdown-item"> <a> <span class=" dropdown-item-text"> Globle </span> </a> </li>
+               
+            </ul>
+            <button data-bs-target="#movies" data-bs-toggle="dropdown" class="btn btn-dark dropdown-toggle">  Movies</button>
+            <ul class="dropdown-menu" id="movies">
+                <li class="dropdown-item"> <a > <span class=" dropdown-item-text bg-primary"> Movies </span> </a> </li>
+                <li class="dropdown-item"> <a> <span class=" dropdown-item-text"> Tv Shows </span> </a> </li>
+             
+            </ul>
+        </div>
+       </div>
+    <div>
+        <div class="container-fluid">
+            <div class="carousel slide" id="banners" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="container-fluid d-flex justify-content-between">
+                        <div class="carousel-item1 active d-flex justify-content-center align-items-center">
+                            <div class="card1 card-img-overlay " data-bs-interval="4000">
+                                <img height="300" src="/public/images/net1.PNG" class="w-100 d-block object-fit-cover">
+                            </div>
+                            <div class="card2 card-img-overlay  " data-bs-interval="4000">
+                                <img height="300" src="/public/images/net2.PNG" class="w-100 d-block">
+                            </div>
+                            <div class="card3 card-img-overlay " data-bs-interval="4000">
+                                <img height="300" src="/public/images/net3.PNG" class="w-100 d-block">
+                            </div>
+                            <div class="card4 card-img-overlay " data-bs-interval="4000">
+                                <img height="300" src="/public/images/net4.PNG" class="w-100 d-block">
+                            </div>
+                        </div>
+                        
+                        
+                       
+                        <div class="carousel-item2 d-flex justify-content-center align-items-center " >
+                            <div class="card5 card-img-overlay" data-bs-interval="4000">
+                                <img height="300" src="/public/images/net5.PNG" class="w-100 d-block">
+                            </div>
+                            <div class="card6 card-img-overlay  " data-bs-interval="4000">
+                                <img height="300" src="/public/images/net6.PNG" class="w-100 d-block">
+                            </div>
+                            
+                        </div>
+                       
+                    </div>
+                    
+                    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#banners">
+                        <span class="carousel-control-next-icon text-dark"></span>
+                    </button>
+        </div>
+    <div >
+        <div class="card bg-black text-white mt-5">
+            <div >
+                <h2>More reasons to join</h2>
+            </div>
+            <div style="display: grid; grid-template-columns: 3fr 3fr 3fr 3fr;">
+                <div class="border border-danger rounded-4  ms-5 "style="height:300px;width: 250px;" >
+                    <div class="card-header fs-4">Enjoy on your TV</div>
+                    <div class="card-body">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</div>
+                    <div class="card-footer"><img src="../images/nc1.PNG" height="60" width="60"></img> </div>
+        
+                </div>
+                <div class="border border-danger rounded-4 mx-1"style="height:300px;width: 250px;">
+                    <div class="card-header fs-4">Download your shows to watch offline</div>
+                    <div class="card-body">Save your favourites easily and always have something to watch.</div>
+                    <div class="card-footer"><img src="../images/nc2.PNG" height="60" width="60"></img> </div>
+        
+                </div>
+                <div class="border border-danger rounded-4  "style="height:300px;width: 250px;">
+                    <div class="card-header fs-4">Watch everywhere</div>
+                    <div class="card-body">Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</div>
+                    <div class="card-footer"><img src="../images/nc3.PNG" height="60" width="60"></img> </div>
+        
+                </div>
+                <div class="border border-danger rounded-4  me-5"style="height:300px;width: 250px;">
+                    <div class="card-header fs-4">Create profiles for kids</div>
+                    <div class="card-body">Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</div>
+                    <div class="card-footer"><img src="../images/nc4.PNG" height="60" width="60"></img> </div>
+        
+                </div>
+            </div>
+            
+        </div>
+        
+        
+    </div>    
+    </div>   
+       <div class="container-fluid">
+        <h2 class="text-start mt-5 text-white ms-5 ">Frequently Asked Questions</h2>
+        <div class="accordion w-75 text-center ms-5" id="faqs">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="button w-100 p-4 text-white fw-bold text-start bg-dark border-2 border-black" data-bs-toggle="collapse" data-bs-target="#q1">What Is Netflix <span class="bi bi-plus "></span></button>
+                </div>
+                <div class="accordion-collapse collapse" id="q1" data-bs-parent="#faqs">
+                    <div class="accordion-body bg-dark text-white">
+                        <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item mt-2">
+                <div class="accordion-header">
+                    <button class="button w-100 p-4 text-white fw-bold text-start bg-dark border-2 border-black" data-bs-toggle="collapse" data-bs-target="#q2">How Much Does Netflix Cost?</button>
+                </div>
+                <div class="accordion-collapse collapse" id="q2" data-bs-parent="#faqs">
+                    <div class="accordion-body bg-dark text-white ">
+                        <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more  on thousands of internet-connected devices.</p>
+                        <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more  on thousands of internet-connected devices.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item mt-2">
+                <div class="accordion-header">
+                    <button class="button w-100 p-4 text-white fw-bold text-start bg-dark border-2 border-black" data-bs-toggle="collapse" data-bs-target="#q3">Where I Can Watch?</button>
+                </div>
+                <div class="accordion-collapse collapse" id="q3" data-bs-parent="#faqs">
+                    <div class="accordion-body bg-dark text-white">
+                        <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more  on thousands of internet-connected devices.</p>
+                        <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more  on thousands of internet-connected devices.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item mt-2">
+                <div class="accordion-header">
+                    <button class="button w-100 p-4 text-white fw-bold text-start bg-dark border-2 border-black" data-bs-toggle="collapse" data-bs-target="#q4">How Do I Cancle?</button>
+                </div>
+                <div class="accordion-collapse collapse" id="q4" data-bs-parent="#faqs">
+                    <div class="accordion-body bg-dark text-white">
+                        <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more  on thousands of internet-connected devices.</p>
+                        <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more  on thousands of internet-connected devices.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   
+
+</section>        

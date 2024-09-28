@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ssc-form</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <script  src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            border: 2px bold lightgray;
+          background-color: rgb(247, 239, 237);
+           font-family: arial;
+           margin: 20px;
+        }
+        .ssc{
+            border: 2px solid rgb(188, 187, 187);
+            border-radius: 10px;
+            box-shadow: 3px 3px 3px  3px lightgrey;
+            background-color: white;
+            width: 400px;
+            height: 400px;
+            padding-left: 30px;
+            margin-top: 200px;
+            
+        }
+         h3{
+            text-align: center;
+            margin-top:-50px;
+            color: brown;
+         }
+         input{
+            width: 90%;
+            border-radius: 5px;
+         }
+         .login-admin{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+           
+         }
+         .admin{
+            border-bottom: 5px  solid brown;
+         }
+         .btn{
+            width: 90%;
+            background-color: brown;
+            color: white;
+         }
+         .bi-arrow-clockwise{
+            margin-left: 100px;
+         }
+         .captcha{
+            width: 150px;
+         }
+        }
+        input:optional+span {
+            display: none;
+        }
+        input:required+span {
+            display: inline;
+            color:red;
+        }
+        input:required {
+            border:1px solid red;
+        }
+        input:optional~div {
+            display: none;
+        }
+        input:required~div {
+            color:red;
+            display: block;
+           
+        }
+        input:valid~div {
+            display: none;
+        }
+        input:valid+span {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <form>
+        <div  class="ssc">
+            <h3>Login to your Account</h3>
+            <div class="login-admin">
+                <span>Candidate</span>
+                <span  class="admin">Admin</span>
+            </div>
+            
+            <dl>
+                <dt>User Name</dt>
+                <dd>
+                    <input type="text" required><span>*</span>
+                    <div>Name Required</div>
+                </dd>
+                <dt>Password</dt>
+                <dd><input type="password" required><span>*</span>
+                    <div>Password Required</div>
+                </dd>
+                <dd>
+                <button class="captcha">sjefujjl</button><span class="bi bi-arrow-clockwise">Refresh</span>
+                </dd>
+                <dt>captcha</dt>
+                <dd><input type="text" class="capcha" required><span>*</span>
+                    <div>type the  text</div>
+    
+                </dd>
+                <button  class="btn">send OTP</button>
+        </div>
+    </form>
+    
+</body>
+</html>

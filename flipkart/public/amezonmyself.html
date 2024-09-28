@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amezon_card</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        section{
+             display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            margin-top: -250px;
+            flex-wrap: wrap;
+            
+        }
+        .card{
+            padding: 20px;
+            margin: x;
+            height: 350px;
+            font-family: arial;
+            background-color: white;
+            /*
+            box-shadow: 2px 2px 2px gray;*/
+            border: 10px solid lightgrey;
+            
+        }
+        .row{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            grid-gap:10px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            
+        }
+        .card-body{
+            padding: 5px;
+            height: 300px;
+            
+        }
+        .card-header{
+            height: 50px;
+        }
+        .card-title{
+            font-size: 20px;
+            font-weight: bold;
+            
+        }
+        .footer-link{
+            text-align: left;
+            color: rgb(11, 178, 224);
+            margin-top: -15px;
+       }
+       .nav-1{
+        height: 40px;
+        display: flex;
+        justify-content:space-between;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+        
+       }
+       .nav-2{
+        height: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding:10px ;
+        background-color: rgb(52, 50, 50);
+    
+       }
+       .logo{
+        width: 100px;
+        height: 50px;
+       }
+       .language{
+        height:20px
+       }
+       .search-bar {
+          width: 500px; 
+          height: 20px; 
+          border: 1px solid gray;
+        display: inline-flex;
+        justify-content: space-between;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: white;
+        color: gray;
+       }
+       .row-2{
+        display: inline-block;
+       }
+       .btn-1{
+        height: 20px;
+        width: 20px;
+        background-color: gray;
+        color: white;
+       }
+       .bi-search{
+        background-color: rgb(247, 186, 72);
+        
+       }
+       .language{
+        padding-top: 15px;
+        height: 15px;
+       }
+       .bi-caret-down-fill{
+        font-size: 9px;
+        color: gray;
+       }
+       .bi-cart3 {
+        font-size:30px
+       }
+       .addres{
+        color: rgb(195, 194, 194);
+       }
+      
+    </style>
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="nav-1">
+            <div class="amazon-logo">
+                <img class="logo" src="./images/amazon_logo.jfif" alt="amazon-logo">
+
+            </div>
+            <div>
+                <span class="addres">Delivering to hydrabad 500034</span><br>
+                <span class="bi bi-geo-alt"></span>
+                <span><big> <b>Update location</b></big></span>
+            </div>
+            <div class="search-bar">
+                <span class="btn-1">All<span class="bi bi-caret-down-fill"></span></span>
+                <span>Search Amazon.in</span>
+                <span class="bi bi-search"></span>
+            </div>
+            <div >
+                <img class="language"  src="./images/india.jfif" alt="ind flag" >
+                <span>EN<span class="bi bi-caret-down-fill"></span></span>
+            </div>
+            <div>
+                <div>Hello Sign in</div>
+                <div><big><b> Account & Lists</b> </big> <span class="bi bi-caret-down-fill"></span></div>
+            </div>
+            <div>
+                <div>Return</div>
+                <div><b>&Order</b> </div>
+            </div>
+            <div>
+                <span class="bi bi-cart3"></span>
+                <span><big><b>Cart</b></span>
+            </div>
+          
+           
+            
+
+        </div>
+        <div class="nav-2">
+            <div>
+                <span class="bi bi-list"> all</span>
+            </div>
+            <div>
+                <span>fresh</span> <span class="bi bi-caret-down-fill"></span>
+            </div>
+            <div>
+                <span>amazon min itv</span>
+            </div>
+            <div>
+                <span>sell</span>
+            </div>
+            <div>
+                <span>best seller</span>
+            </div>
+            <div>
+                <span>todays deals</span>
+            </div>
+            <div>
+                <span>mobile</span>
+            </div>
+            <div>
+                <span>customer service</span>
+            </div>
+            <div>
+                <span>prime</span>
+            </div>
+            <div>
+                <span>electronics</span>
+            </div>
+            <div>
+                <span>fashion</span>
+            </div>
+            <div>
+                <span>new release</span>
+            </div>
+            <div>
+                <span>home&kitchen</span>
+            </div>
+            <div>
+                <span>amazon pay</span>
+            </div>
+
+        </div> 
+    </nav>
+    <img src="/public/images/amezon_banner.jpg" width="100%">
+  </header>
+  <section>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">Revamp your home in style</div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                    <div><img src="./images/a1.jpg" width="100%">
+                         <p>Cushion covers, bedsheets & more</p>
+                    </div>
+                    <div>
+                      <img src="./images/a2.jpg" width="100%">
+                        <p>Figurines, vases & more</p>
+                    </div>
+            </div>
+            <div class="row-2">
+                <div>
+                    <div><img src="./images/a3.jpg" width="100%">
+                       <p> Home storage</p>
+                    </div>
+                    <div>
+                       <img src="./images/a4.jpg" width="100%">
+                       <p>Lighting solutions</p>
+                   </div>  
+                </div>
+            </div>
+        </div>        
+            <div class="card-footer">
+                <div class="footer-link">explore more</div>
+            </div>
+        
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">Appliances for your home | Up to 55% off</div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                    <div><img src="./images/a5.jpg" width="100%">
+                         <p>Air conditioner</p>
+                    </div>    
+                    <div>
+                        <img src="./images/a6.jpg" width="100%">
+                        <p>Refrigerators</p>
+                    </div>
+            </div>
+            <div class="row">
+                    <div> <img src="./images/a7.jpg" width="100%">
+                        <p>Microwaves</p>
+                    </div>
+                    <div>
+                      <img src="./images/a8.jpg" width="100%">
+                      <p>Washing machines</p>
+                    </div>    
+            </div>
+        </div>    
+            <div class="card-footer">
+                <div class="footer-link">explore more</div>
+            </div>
+        
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">Starting ₹99 | Amazon Brands & more</div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                    <div><img src="./images/a9.jpg" width="100%">
+                      <p>Starting ₹299 | Home storage </p>
+                    </div>
+                    <div>
+                      <img src="./images/a10.jpg" width="100%">
+                      <p>  Up to 60% off | Storage & racks</p>
+                    </div>
+            </div>
+            <div class="row">
+                    <div><img src="./images/a11.jpg" width="100%">
+                       <p> Starting ₹99 | Toys & games</p>
+                    </div>
+                    <div>
+                       <img src="./images/a12.jpg" width="100%">
+                       <p> Up to 60% off | Jackets & more</p>
+                    </div>
+            </div>
+        </div>        
+            <div class="card-footer">
+                <div class="footer-link">explore more</div>
+            </div>
+        
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">Up to 60% off | Styles for women</div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                    <div> <img src="./images/a13.jpg" width="100%">
+                         <p> Women's Clothing</p>
+                    </div>
+                    <div>
+                        <img src="./images/a14.jpg" width="100%">
+                        <p>Footwear</p>
+                    </div>
+            </div>
+            <div class="row">
+                    <div><img src="./images/a15.jpg" width="100%">
+                       <p> Watches</p>
+                    </div>
+                    <div>
+                        <img src="./images/a16.jpg" width="100%">
+                        <p>Fashion jewellery</p>
+                    </div>
+            </div>
+        </div>    
+            <div class="card-footer">
+                <div class="footer-link">explore more</div>
+            </div>
+        
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">Revamp your home in style</div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                    <div><img src="./images/a1.jpg" width="100%">
+                         <p>Cushion covers, bedsheets & more</p>
+                    </div>
+                    <div>
+                      <img src="./images/a2.jpg" width="100%">
+                        <p>Figurines, vases & more</p>
+                    </div>
+            </div>
+            <div class="row">
+                    <div><img src="./images/a3.jpg" width="100%">
+                       <p> Home storage</p>
+                    </div>
+                    <div>
+                       <img src="./images/a4.jpg" width="100%">
+                       <p>Lighting solutions</p>
+                   </div>  
+            </div>
+        </div>        
+            <div class="card-footer">
+                <div class="footer-link">explore more</div>
+            </div>
+        
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">Appliances for your home | Up to 55% off</div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                    <div><img src="./images/a5.jpg" width="100%">
+                         <p>Air conditioner</p>
+                    </div>    
+                    <div>
+                        <img src="./images/a6.jpg" width="100%">
+                        <p>Refrigerators</p>
+                    </div>
+            </div>
+            <div class="row">
+                    <div> <img src="./images/a7.jpg" width="100%">
+                        <p>Microwaves</p>
+                    </div>
+                    <div>
+                      <img src="./images/a8.jpg" width="100%">
+                      <p>Washing machines</p>
+                    </div>    
+            </div>
+        </div>    
+            <div class="card-footer">
+                <div class="footer-link">explore more</div>
+            </div>
+        
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">Starting ₹99 | Amazon Brands & more</div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                    <div><img src="./images/a9.jpg" width="100%">
+                      <p>Starting ₹299 | Home storage </p>
+                    </div>
+                    <div>
+                      <img src="./images/a10.jpg" width="100%">
+                      <p>  Up to 60% off | Storage & racks</p>
+                    </div>
+            </div>
+            <div class="row">
+                    <div><img src="./images/a11.jpg" width="100%">
+                       <p> Starting ₹99 | Toys & games</p>
+                    </div>
+                    <div>
+                       <img src="./images/a12.jpg" width="100%">
+                       <p> Up to 60% off | Jackets & more</p>
+                    </div>
+            </div>
+        </div>        
+            <div class="card-footer">
+                <div class="footer-link">explore more</div>
+            </div>
+        
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">Up to 60% off | Styles for women</div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                    <div> <img src="./images/a13.jpg" width="100%">
+                         <p> Women's Clothing</p>
+                    </div>
+                    <div>
+                        <img src="./images/a14.jpg" width="100%">
+                        <p>Footwear</p>
+                    </div>
+            </div>
+            <div class="row">
+                    <div><img src="./images/a15.jpg" width="100%">
+                       <p> Watches</p>
+                    </div>
+                    <div>
+                        <img src="./images/a16.jpg" width="100%">
+                        <p>Fashion jewellery</p>
+                    </div>
+            </div>
+        </div>    
+            <div class="card-footer">
+                <div class="footer-link">explore more</div>
+            </div>
+        
+    </div>
+  </section>  
+</body>
+</html>
