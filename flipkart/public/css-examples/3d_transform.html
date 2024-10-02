@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        img {
+            transform: scale3d(1,1,1);
+            transition: 2s;
+        }
+        img:hover {
+            transform: scale3d(2,2,4);
+            box-shadow: 15px 15px 2px black;
+            border-radius: 100px;
+            transition: 4s;
+        }
+    </style>
+</head>
+<body>
+   <div>
+      <img src="/public/images/women-fashion.jpg" width="200" height="200">
+   </div>
+</body>
+</html>
