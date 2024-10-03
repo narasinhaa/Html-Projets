@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>query string</title>
+    <script>
+        function bodyload(){
+            document.getElementById("lblName").innerHTML = location.search.slice(location.search.indexOf("=")+1)
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <p>Hello ! <span id="lblName"></span></p>
+</body>
+</html>
