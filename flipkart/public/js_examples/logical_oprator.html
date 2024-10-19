@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function submitClick(){
+            var userid = document.getElementById("txtid").value;
+            if (userid==="john@gmail.com" || userid==="+91987654321"){
+                document.write("login success....");
+            }else {
+                alert("invalid user id");
+            }
+        }
+    </script>
+</head>
+<body>
+    <dl>
+        <dt>Email or mobile number</dt>
+        <dd><input type="text" id="txtid"></dd>
+    </dl>
+    <button onclick="submitClick()">submit</button>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Install Game</title>
+    <script>
+        function RamChange() {
+            var ramsize = parseInt(document.getElementById("lstRam").value);
+            var cardSelect = document.getElementById("lstCard");
+            var installButton = document.getElementById("btninstall");
+
+            // Enable the graphic card dropdown if RAM is 6GB or more
+            if (ramsize >= 6) {
+                cardSelect.disabled = false;
+            } else {
+                cardSelect.disabled = true; // Disable if less than 6GB
+                cardSelect.selectedIndex = 0; // Reset selection
+            }
+
+            // Enable install button if a graphic card is selected
+            if (cardSelect.value !== "Graphic Card" && !cardSelect.disabled) {
+                installButton.disabled = false;
+            } else {
+                installButton.disabled = true;
+            }
+        }
+
+        function graphicChange() {
+            var cardSelect = document.getElementById("lstCard");
+            var installButton = document.getElementById("btninstall");
+
+            // Enable install button if a graphic card is selected
+            if (cardSelect.value !== "Graphic Card") {
+                installButton.disabled = false;
+            } else {
+                installButton.disabled = true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>Install Game</legend>
+        <dl>
+            <dt>Select Your RAM Size</dt>
+            <dd>
+                <select id="lstRam" onchange="RamChange()">
+                    <option value="">RAM SIZE</option>
+                    <option value="4">4GB</option>
+                    <option value="6">6GB</option>
+                    <option value="8">8GB</option>
+                </select>
+            </dd>
+            <dt>Select Graphic Card</dt>
+            <dd>
+                <select id="lstCard" onchange="graphicChange()" disabled>
+                    <option value="">Graphic Card</option>
+                    <option value="Intel">Intel</option>
+                    <option value="No Card">No Card</option>
+                </select>
+            </dd>
+        </dl>
+        <button disabled id="btninstall">Install</button>
+    </fieldset>
+</body>
+</html>
