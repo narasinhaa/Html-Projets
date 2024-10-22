@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function verifyCard(){
+            var card=document.getElementById("txtCard").value;
+            if (card==="4444555566667777"){
+                document.getElementById("cvvContainer").style.display="block"; 
+            }  
+        }
+        function verifyCvv(){
+            var cvv=document.getElementById("txtCvv").value;
+            if(cvv==="4567"){
+                document.getElementById("expiryContainer").style.display="block";
+            } 
+        }  
+        function verifyExpiry(){
+            var expiry =document.getElementById("lstExpiry").value;
+            if(expiry==="2025"){
+                document.getElementById("btnPay").style.display="block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>payment details</h3>
+    <dl>
+        <dt>card number</dt>
+        <dd><input type="text" onblur="verifyCard()" maxlength="16" id="txtCard"> </dd>
+        <div id="cvvContainer" style="display: none;">
+            <dt>cvv</dt>
+            <dd><input type="text" id="txtCvv" onblur="verifyCvv()" size="4"></dd>
+        </div>
+        <div id="expiryContainer" style="display: none;">
+            <dt>expiry</dt>
+            <dd>
+                <select id="lstExpiry" onchange="verifyExpiry()">
+                    <option>select expiry</option>
+                    <option>2024</option>
+                    <option>2025</option>
+                    <option>2026</option>
+                </select>
+            </dd>
+        </div>
+        <button id="btnPay" style="display: none;">pay</button>
+    </dl>
+</body>
+</html>
