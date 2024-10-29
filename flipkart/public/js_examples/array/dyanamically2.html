@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var values = ["All", "Electronics", "Fashion", "Footwear"]
+        function LoadClick(){
+             document.querySelector("ol").innerHTML = "";
+             values.map(function(value){
+                 var li = document.createElement("li");
+                 li.innerHTML = value;
+                 document.querySelector("ol").appendChild(li);
+             })
+        }
+    </script>
+</head>
+<body>
+    <button onclick="LoadClick()">Load</button>
+    <ol>
+
+    </ol>
+</body>
+</html>
