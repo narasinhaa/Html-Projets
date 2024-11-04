@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script>
+        function Step1(){
+            document.querySelector("p").innerHTML = "10% Increased";
+        }
+        function Step2(){
+            document.querySelector("p").innerHTML = "30% Increased";
+        }
+        function Step3(){
+            document.querySelector("p").innerHTML = "70% Increased";
+        }
+        function Step4(){
+            document.querySelector("p").innerHTML = "100% Increased";
+        }
+       
+        function Increase(){
+            setTimeout(Step1, 2000);
+            setTimeout(Step2, 4000);
+            setTimeout(Step3, 6000);
+            setTimeout(Step4, 10000);
+           
+        }
+       
+    </script>
+</head>
+<body>
+    Volume <button onclick="Increase()" class="bi bi-chevron-up"> </button>
+    <p align="center"></p>
+</body>
+</html>

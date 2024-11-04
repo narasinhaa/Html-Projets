@@ -1,0 +1,10 @@
+<script>
+    var Mfd = new Date();
+
+    var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var months = ["January", "Feb", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    Mfd.setDate(31);
+    document.write(`${Mfd.getDate()} ${weekdays[Mfd.getDay()]} , ${months[Mfd.getMonth()]} ${Mfd.getFullYear()}`);
+
+</script>

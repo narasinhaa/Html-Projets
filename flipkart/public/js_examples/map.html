@@ -1,0 +1,17 @@
+<script>
+    var data = new Map();
+    data.set(1, "TV");
+    data.set("Mobile", {Name:"iPhone", Price:60000.34});
+
+    document.write(data.get("Mobile").Name + "<br>");
+
+    data.delete("Mobile");
+    if(data.has("Mobile")){
+       document.write(data.get("Mobile"));
+    } else {
+       document.write("Mobile Not Found<br>");
+    }
+    for(var item of data.entries()){
+        document.write(item + "<br>");
+    }
+</script>

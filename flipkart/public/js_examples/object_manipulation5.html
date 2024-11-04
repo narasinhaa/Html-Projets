@@ -1,0 +1,15 @@
+<script>
+    var Rating = Symbol();
+    var product = {
+        Id: 1,
+        Name: "TV",
+        Price: 50000.33,
+        Stock:true,
+        [Rating]:4.2,
+        Offers: ["10% on EMI", "20% on Credit Card"]
+    }
+    for(var key in product){
+        document.write(`${key} <br>`);
+    }
+    document.write(`Product Rating : ${product[Rating]}`);
+</script>

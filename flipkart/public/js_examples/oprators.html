@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+    </style>
+    <script>
+        function SubmitClick(){
+
+            var coursesCheckboxes = document.getElementsByName("Course");
+            var courseName = "";
+            var fee = 0;
+            for(var checkbox of coursesCheckboxes){
+                if(checkbox.checked){
+                     courseName += checkbox.value + "<br>";
+                     fee += parseInt(checkbox.id);
+                 }
+            }
+            document.querySelector("p").innerHTML = `<h3>Selected Courses</h3> ${courseName} <br> Total Fee : ${fee}`;
+           
+        }
+    </script>
+</head>
+<body>
+    <ul>
+        <li> <input onchange="SubmitClick()" type="checkbox" id="4000" value="Java" name="Course"> Java </li>
+        <li> <input onchange="SubmitClick()" type="checkbox" id="5000" value=".NET" name="Course"> .NET </li>
+        <li> <input onchange="SubmitClick()" type="checkbox" id="6000" value="UI Fullstack" name="Course"> UI Fullstack </li>
+        <li> <input onchange="SubmitClick()" type="checkbox" id="2000" value="Oracle" name="Course"> Oracle </li>
+    </ul>
+    <button onclick="SubmitClick()">Submit</button>
+    <p></p>
+</body>
+</html>
