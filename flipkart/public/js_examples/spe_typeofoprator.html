@@ -1,0 +1,12 @@
+<script>
+    fetch('https://fakestoreapi.com/products/1&#39);)
+    .then(function(response){
+      return response.json();
+    })
+    .then(function(product){
+        for(var key in product)
+        {
+           document.write(`${key} [${typeof product[key]}] <br>`);
+        }
+    })
+</script>
