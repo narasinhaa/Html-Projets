@@ -1,0 +1,15 @@
+<script>
+    function PrintPattern(n)
+     {
+          for(var i=1; i<=n; i++)
+          {
+              document.write(`<div align="center">`);
+                  
+              for(var j=1; j<=i; j++){
+                  document.write(`* &nbsp; &nbsp;`);
+              }
+              document.write("</div>");
+          }
+     }
+     PrintPattern(parseInt(prompt("Enter Number")));
+ </script>

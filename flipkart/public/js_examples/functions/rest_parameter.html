@@ -1,0 +1,8 @@
+<script>
+    function Details(...product) {
+        var [id, name, price, cities, rating] = product;
+        document.write(`Id=${id}<br>Name=${name}<br>Price=${price}<br>Cities=${cities.join(' / ')}<br>Rating=${rating.Rate}[${rating.Count}]`);
+    }
+    Details(1, 'TV', 57000.44, ["Delhi", "Hyd", "Mumbai"], {Rate:3.5, Count:1669});
+
+</script>

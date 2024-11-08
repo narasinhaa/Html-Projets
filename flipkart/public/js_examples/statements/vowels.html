@@ -1,0 +1,13 @@
+<script>
+    var str = "Welcome to JavaScript";
+    var count = 0;      
+    function GetCount(char){
+        for(var i=0; i<str.length; i++){
+        if(str.charAt(i)==char) {
+             count++;
+          }
+        }
+        document.write(`${char} occurred ${count} times`);
+    }
+    GetCount(prompt("Enter Character"));
+</script>

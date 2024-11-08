@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function VerifyUser(){
+            var userid = document.getElementById("txtId").value;
+            var lblError = document.getElementById("lblError");
+
+            fetch("../data/users.json")
+            .then(function(response){
+                 return response.json();
+            })
+            .then(function(users){
+                for(var user of users){
+                    if(user.UserId===userid){
+                        lblError.innerHTML = "User Id Taken - Try Another".fontcolor('red');
+                        break;
+                    } else {
+                        lblError.innerHTML = "User Id Available".fontcolor('green');
+                    }
+                }
+               
+            })
+        }
+    </script>
+</head>
+<body>
+    <h2>Register New User</h2>
+    <dl>
+        <dt>UserId</dt>
+        <dd><input type="text" onkeyup="VerifyUser()" id="txtId"></dd>
+        <dd id="lblError"></dd>
+    </dl>
+</body>
+</html>

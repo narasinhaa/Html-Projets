@@ -1,0 +1,28 @@
+<script>
+    function Component(componentName){
+         if(componentName==="login") {
+             return `
+              <h2>User Login</h2>
+              <dl>
+                 <dt>Name</dt>
+                 <dd><input type="text"></dd>
+                 <dt>Password</dt>
+                 <dd><input type="password"></dd>  
+              </dl>
+               <button>Login</button>
+              `
+         } else {
+            return `
+              <h2>Register</h2>
+              <dl>
+                 <dt>Email</dt>
+                 <dd><input type="Email"></dd>
+                 <dt>Mobile</dt>
+                 <dd><input type="text"></dd>  
+              </dl>
+               <button>Register</button>
+              `;
+         }
+    }
+    document.write(Component(prompt("Enter Component Name","longin | register")));
+</script>

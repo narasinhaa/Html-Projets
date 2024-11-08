@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <script>
+          var categories = ["All", "Fashion", "Footwear", "Electronics"];
+          function bodyload(){
+               for(var i=0; i<categories.length; i++)  {
+                    var li = document.createElement("li");
+                    li.innerHTML = categories[i];
+                    document.querySelector("ol").appendChild(li);
+               }
+               
+          }
+     </script>
+</head>
+<body onload="bodyload()">
+     <ol>
+
+     </ol>
+</body>
+</html>
