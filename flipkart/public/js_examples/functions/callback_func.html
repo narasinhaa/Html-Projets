@@ -1,0 +1,19 @@
+<script>
+    function FetchData(url, success, failure)
+    {  
+        if(url==="https://fakestore&quot;) {
+             success([{Name:"TV"}, {Name:"Mobile"}]);
+        } else {
+            failure("Invalid URL: 404 Not Found");
+        }
+    }
+    FetchData(
+        prompt("Enter URL"),
+        function(response) {
+            console.log(response);
+        },
+        function(error) {
+            console.log(error);
+        }
+    )
+</script>

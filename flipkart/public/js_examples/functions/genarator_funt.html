@@ -1,0 +1,14 @@
+<script>
+
+    function* GetData(){
+        yield 101,
+        yield "Mobile",
+        yield ["Delhi", "Hyd"]
+    }
+
+    var obj = GetData();
+    console.log(obj.next());
+    console.log(obj.next());
+    console.log(obj.next().value);
+    console.log(obj.next());
+</script>

@@ -1,0 +1,9 @@
+<script>
+    fetch('https://fakestoreapi.com/products/categories&#39;)
+    .then(response => response.json())
+    .then(categories=> {
+         categories.map(category=>{
+              document.write(`<li>${category}</li>`);
+         })
+    })
+</script>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function bodyload(){
+             document.querySelector("button").addEventListener("click", (e)=>{
+                    document.write(`X=${e.clientX}<br>Y=${e.clientY}<br>Button Name=${e.target.name}<br>Class=${e.target.className}`);
+             })
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <button name="Details" class="btn btn-primary">Details</button>
+</body>
+</html>

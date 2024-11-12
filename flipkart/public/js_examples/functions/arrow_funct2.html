@@ -1,0 +1,11 @@
+<script>
+    const FetchData = (url, success, failure)=> {
+        if(url==="fakestore") {
+            success('Data Fetched Successfully');
+         } else {
+            failure('Invalid URL');
+         }
+    }
+    FetchData(prompt("Enter URL"),(response)=>{console.log(response)},(error)=>{console.log(error)});
+     
+</script>
